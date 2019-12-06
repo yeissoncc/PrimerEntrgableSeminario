@@ -46,7 +46,7 @@
         }
 
         .violeta {
-            background: #be2edd;
+            background: #7B241C;
         }
 
         .violeta.light {
@@ -72,19 +72,24 @@
         .btn-start {
             width: 400px;
             height: 100px;
-            background: #ecf0f1;
-            color: #2c3e50;
+            background: #5D6D7E;
+            color: #1F618D;
             font-size: 2.5rem;
             position: absolute;
-            top: calc(50% - 50px);
+            top: calc(50% - -200px);
             left: calc(50% - 200px);
+        }
+        body{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
         }
 
         .hide {
             display: none;
         }
 
-        * {
+         {
             font-family: Arial;
         }
     </style>
@@ -92,30 +97,18 @@
 </head>
 
 <body>
+	<div>
+		<h1>SIMON DICE XD</h1>
+	</div>
 
-    <div class="container flow-v distribute-h center">
-      <div class="child">
-        <h1>
-          SIMON DICE
-      </h1>
-      </div>
-      <div class="child">
-
-        <div class="gameboard">
+   
+    <div class="gameboard">
         <div id="celeste" class="color celeste left" data-color="celeste"></div>
         <div id="violeta" class="color violeta right" data-color="violeta"></div>
         <div id="naranja" class="color naranja left" data-color="naranja"></div>
         <div id="verde" class="color verde right" data-color="verde"></div>
-       
+        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
     </div>
-      </div>
-       <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
-    </div>
-
-
-   
-    
-     
 
     <script src="juego.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
